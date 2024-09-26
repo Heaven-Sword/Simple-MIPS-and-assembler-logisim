@@ -2,15 +2,15 @@
 简易MIPS+汇编器(logisim+c/c++)
 ------------------------------------
 V1.0
-简易版MIPS的logisim实现包含以下指令
-R型：add,sub,and,or,xor,slt,sll,srl,sra,jr
-I型：addi,subi,andi,ori,xori,slti,slli,srli,srai,lw,sw,beq
-J型：j
+简易版MIPS的logisim实现包含以下指令：
+1. R型：add,sub,and,or,xor,slt,sll,srl,sra,jr
+2. I型：addi,subi,andi,ori,xori,slti,slli,srli,srai,lw,sw,beq
+3. J型：j
 
 汇编器实现汇编指令：
-R型：add,sub,and,or,xor,slt,seq,sgt,sll,srl,sra,jr
-I型：addi,subi,andi,ori,xori,slti,seqi,sgti,slli,srli,srai,lw,sw,beq
-J型：j,jmp
+1. R型：add,sub,and,or,xor,slt,seq,sgt,sll,srl,sra,jr
+2. I型：addi,subi,andi,ori,xori,slti,seqi,sgti,slli,srli,srai,lw,sw,beq
+3. J型：j,jmp
 
 目前为止，已经初步的广泛验证了简易MIPS和汇编器的正确性
 目录结构：
