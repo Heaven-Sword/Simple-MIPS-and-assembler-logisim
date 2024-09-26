@@ -12,7 +12,7 @@ V1.0
 2. I型：addi,subi,andi,ori,xori,slti,seqi,sgti,slli,srli,srai,lw,sw,beq
 3. J型：j,jmp
 
-目前为止，已经初步的广泛验证了简易MIPS和汇编器的正确性
+目前为止，已经初步验证了简易MIPS和汇编器的正确性
 
 目录结构：
 ------------------------------------
