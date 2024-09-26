@@ -1,0 +1,33 @@
+label:
+add $s0,$s1,$s2
+sub $s0,$s1,$s2
+and $s0,$s1,$s2
+or $s0,$s1,$s2
+xor $s0,$s1,$s2
+slt $s0,$s1,$s2
+seq $s0,$s1,$s2
+sgt $s0,$s1,$s2
+sll $s0,$s1,1010
+srl $s0,$s1,110
+sra $s0,$s1,1001
+jr $s0
+
+addi $s0,$s1,1010110
+subi $s0,$s1,1010110
+andi $s0,$s1,1010110
+ori $s0,$s1,1010110
+xori $s0,$s1,1010110
+slti $s0,$s1,1010110
+seqi $s0,$s1,1010110
+sgti $s0,$s1,1010110
+slli $s0,$s1,1010
+srli $s0,$s1,110
+srai $s0,$s1,1001
+
+lw $s0,$s1,1101
+sw $s0,$s1,1101
+beq $s0,$s1,1101
+
+j 11010010
+jmp label
+END

@@ -1,0 +1,16 @@
+; 验证R型指令的正确性(先赋值) 6 与 2
+addi $s0, $zero, 110
+addi $s1, $zero, 010
+
+add $s2, $s0, $s1
+sub $s2, $s0, $s1
+and $s2, $s0, $s1
+or $s2, $s0, $s1
+xor $s2, $s0, $s1
+slt $s2, $s0, $s1
+sll $s2, $s0, 10
+srl $s2, $s0, 10
+sra $s2, $s0, 10
+
+jr $zero
+

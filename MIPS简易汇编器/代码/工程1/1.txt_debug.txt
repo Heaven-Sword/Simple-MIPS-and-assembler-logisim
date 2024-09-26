@@ -1,0 +1,22 @@
+_start:
+	addi $t1, $zero, 101
+	addi $t2, $zero, 0
+	addi $t7, $zero, 1
+	_for:
+		add $a0, $t2, $zero
+		add $a1, $t1, $zero
+		jmp f_add
+		f_add_ret:
+		add $t2, $v0, $zero
+		subi $t1, $t1, 1
+		slti $t3, $t1, 1
+		beq $t3, $t7, 1
+		jmp _for
+	sw $t2, $zero, 0
+	jmp _start_end
+f_add:
+	add $a0, $a0, $a1
+	add $v0, $a0, $zero
+	jmp f_add_ret
+_start_end:
+END

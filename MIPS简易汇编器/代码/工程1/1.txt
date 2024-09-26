@@ -1,0 +1,45 @@
+; 程序：创建函数，并计算5+4+3+2+1，并输出到外部输出寄存器
+
+_start:
+	; 赋值给t1寄存器5值, t2为最终结果
+	addi $t1, $zero, 101
+	addi $t2, $zero, 0
+	addi $t7, $zero, 1
+
+	; 循环，当t1寄存器的值 <= 0 停止
+	_for:
+		; 给函数传参
+		add $a0, $t2, $zero
+		add $a1, $t1, $zero
+
+		; 跳转到函数执行
+		jmp f_add
+		f_add_ret:
+		add $t2, $v0, $zero
+		
+		subi $t1, $t1, 1
+		
+		; 判断t1是否<=0，并将判断结果保存到t3
+		slti $t3, $t1, 1
+		
+		; if语句执行
+		beq $t3, $t7, 1
+		jmp _for
+		
+	; 如果t1<=0，跳转到这，然后写入数据到外部存储器
+	sw $t2, $zero, 0
+	; 程序结束
+	jmp _start_end
+
+; 加法函数
+f_add:
+	; a0 = a0 + a1
+	add $a0, $a0, $a1
+	; 返回函数运算值
+	add $v0, $a0, $zero
+	; 返回主函数
+	jmp f_add_ret
+
+
+_start_end:
+END
