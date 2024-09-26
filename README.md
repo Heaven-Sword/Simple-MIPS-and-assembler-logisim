@@ -1,6 +1,7 @@
 # Simple-MIPS-and-assembler-logisim
 简易MIPS+汇编器(logisim+c/c++)
-V1.0------------------------------------
+------------------------------------
+V1.0
 简易版MIPS的logisim实现包含以下指令
 R型：add,sub,and,or,xor,slt,sll,srl,sra,jr
 I型：addi,subi,andi,ori,xori,slti,slli,srli,srai,lw,sw,beq
