@@ -25,10 +25,12 @@ V1.0
 ------------------------------------
 1. https://blog.csdn.net/wbwwf8685/article/details/53762908  --  MIPS寄存器.jpg
 2. https://blog.csdn.net/flyingqr/article/details/7073088  --  MIPS寄存器_cn.png
+3. https://github.com/FlyMachinee/MIPS-tutorial
 
 注意事项
 ------------------------------------
 1. 读者需自行下载 Logisim 软件
+2. 本MIPS实现完全按照：https://github.com/FlyMachinee/MIPS-tutorial的实现重现，还实现了其对应的汇编器
 
 软件开发
 ------------------------------------
