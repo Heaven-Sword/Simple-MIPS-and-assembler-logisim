@@ -30,7 +30,7 @@ V1.0
 注意事项
 ------------------------------------
 1. 读者需自行下载 Logisim 软件
-2. 本MIPS实现完全按照：https://github.com/FlyMachinee/MIPS-tutorial的实现重现，还实现了其对应的汇编器
+2. 本MIPS实现完全按照："https://github.com/FlyMachinee/MIPS-tutorial" 的实现重现，还实现了其对应的汇编器
 
 软件开发
 ------------------------------------
